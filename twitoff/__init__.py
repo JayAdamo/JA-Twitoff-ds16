@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 """
 Entry point for the TwitOff Flask web application.
 """
