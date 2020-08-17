@@ -26,3 +26,9 @@ class Tweet(DB.Model):
 
     def __repr__(self):
         return '[Tweet {}]'.format(self.text)
+    
+ def add_test_users():
+    for i, name in enumerate(TWITTER_USERS):
+        user = User(id=i, name=name)
+        DB.session.add(user)
+    DB.session.commit()
